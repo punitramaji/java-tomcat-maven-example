@@ -6,7 +6,7 @@ pipeline {
     stages{
         stage ('Build docker images') {
             steps {
-                sh "docker build -t punitramaji/myapp:${DOCKER_TAG}"
+                sh "docker build -t punitramaji/myapp:${DOCKER_TAG} ."
             }
         }
     }
